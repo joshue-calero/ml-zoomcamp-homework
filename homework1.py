@@ -8,7 +8,8 @@ print("numpy version: " + np.__version__)
 print("pandas version: " +pd.__version__)
 
 #import dataset
-df = pd.read_csv(r"C:\Users\josue\Downloads\car_fuel_efficiency_2026.csv")
+url = "https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/cohorts/2026/data/car_fuel_efficiency_2026.csv"
+df = pd.read_csv(url)
 
 print(df.head(5))
 print(df.columns.tolist())
